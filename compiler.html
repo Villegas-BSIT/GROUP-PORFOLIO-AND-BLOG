@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 30px 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .portfolio-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .portfolio-item h3 {
+      margin: 15px 0;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet our Team</h1>
+    <p>Click any image to visit our Portfolio and Blog</p>
+  </header>
+
+  <div class="portfolio-container">
+    <!-- Portfolio Item 1 -->
+    <div class="portfolio-item">
+      <a href="villegasportfolio.html">
+        <img src="jerlyn.jpg">
+      </a>
+      <h3>VILLEGAS</h3>
+    </div>
+
+    <!-- Portfolio Item 2 -->
+    <div class="portfolio-item">
+      <a href="onocportfolio.html">
+        <img src="donna.jpg">
+      </a>
+      <h3>ONOC</h3>
+    </div>
+
+    <!-- Portfolio Item 3 -->
+    <div class="portfolio-item">
+      <a href="ACQUINPortfolio.html">
+        <img src="acquin.jpg">
+      </a>
+      <h3>ACQUIN</h3>
+    </div>
+
+    <!-- Portfolio Item 4 -->
+    <div class="portfolio-item">
+      <a href="amparadoportfolio.html">
+        <img src="amparado.jpg">
+      </a>
+      <h3>ELIJAH</h3>
+    </div>
+
+    <!-- Portfolio Item 5 -->
+    <div class="portfolio-item">
+      <a href="ROMELPORTFOLIO.html">
+        <img src="romel.jpg">
+      </a>
+      <h3>ROMEL</h3>
+    </div>
+
+    <!-- Portfolio Item 6 -->
+    <div class="portfolio-item">
+      <a href="portfoliodrey.html">
+        <img src="drey.jpg">
+      </a>
+      <h3>WANDREYSUN</h3>
+    </div>
+
+    <!-- Portfolio Item 7 -->
+    <div class="portfolio-item">
+      <a href="allenportfolio.html">
+        <img src="allen.jpg">
+      </a>
+      <h3>MAHUSAY</h3>
+    </div>
+
+    <!-- Portfolio Item 8 -->
+    <div class="portfolio-item">
+      <a href="linaza.html">
+        <img src="ken.jpg" >
+      </a>
+      <h3>KEN</h3>
+    </div>
+
+    <!-- Portfolio Item 9 -->
+    <div class="portfolio-item">
+      <a href="earlportfolio.html">
+        <img src="earl.jpg">
+      </a>
+      <h3>ELICANO</h3>
+    </div>
+
+
+<!-- Portfolio Item 10 -->
+    <div class="portfolio-item">
+      <a href="pedojanportfolio.html">
+        <img src="pedojan.jpg">
+      </a>
+      <h3>PEDOJAN</h3>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 BSIT-2ND YEAR </p>
+  </footer>
+
+</body>
+</html>

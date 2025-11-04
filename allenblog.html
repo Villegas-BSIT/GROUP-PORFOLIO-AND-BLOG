@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>One Piece — Short Intro</title>
+
+  <style>
+    /* Page reset / simple typography */
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#f59e0b;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --max-width:760px;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #e6eef6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(1200px 400px at 10% 10%, rgba(245,158,11,0.08), transparent 8%),
+        radial-gradient(900px 350px at 90% 90%, rgba(79,70,229,0.03), transparent 6%),
+        linear-gradient(180deg,#071027 0%, #06121a 100%);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:32px 16px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .card{
+      width:100%;
+      max-width:var(--max-width);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow: 0 10px 30px rgba(3,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px);
+    }
+
+    .header{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-bottom:12px;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(135deg,#f97316,#f59e0b);
+      color:#081024;
+      font-weight:700;
+      font-size:20px;
+      box-shadow: 0 6px 18px rgba(245,158,11,0.14);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.05;
+      letter-spacing: -0.2px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+      margin-top:6px;
+    }
+
+    figure{
+      margin: var(--gap) 0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+    img.responsive{
+      width:100%;
+      max-width:420px;
+      height:auto;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+    figcaption{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .content{
+      font-size:15px;
+      line-height:1.6;
+      color: #dfe9f4;
+    }
+
+    .highlight{
+      display:inline-block;
+      background:var(--glass);
+      padding:6px 10px;
+      border-radius:999px;
+      color:var(--accent);
+      font-weight:600;
+      margin-top:12px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:520px){
+      .header{gap:10px}
+      .logo{width:48px;height:48px;font-size:18px}
+      h1{font-size:18px}
+      .card{padding:16px}
+    }
+  </style>
+</head>
+<body>
+  <article class="card" aria-labelledby="one-piece-title">
+    <header class="header">
+      <div class="logo" aria-hidden="true">OP</div>
+      <div>
+        <h1 id="one-piece-title">One Piece — Friendship, Dreams, Courage</h1>
+        <div class="meta">A short introduction to Eiichiro Oda's world for your blog</div>
+      </div>
+    </header>
+
+    <figure>
+      <a href="https://blogger.googleusercontent.com/img/a/AVvXsEjaed5rGaVcGtFl2__kiYOtB-aGu7yv8vpfEhIhW5zkznvHczW9VAK2cHLrupOtgMYkrtq6bfguQwq5ud2feN0GN9Mg_muSBGEzYa5jyeFleHpDJjGmDvfC3GAko97F4yFb5m8j62YFzuZfK1PjurMMJ6ZcN6ZK-m-F5ro1dN7ExSTb0MYu7b-6CnW9DHxl" target="_blank" rel="noopener noreferrer">
+        <img class="responsive" src="https://blogger.googleusercontent.com/img/a/AVvXsEjaed5rGaVcGtFl2__kiYOtB-aGu7yv8vpfEhIhW5zkznvHczW9VAK2cHLrupOtgMYkrtq6bfguQwq5ud2feN0GN9Mg_muSBGEzYa5jyeFleHpDJjGmDvfC3GAko97F4yFb5m8j62YFzuZfK1PjurMMJ6ZcN6ZK-m-F5ro1dN7ExSTb0MYu7b-6CnW9DHxl" alt="Straw Hat Pirates — One Piece" width="472" height="649" />
+      </a>
+      <figcaption>Straw Hat Pirates — image (click to open full size)</figcaption>
+    </figure>
+
+    <div class="content">
+      <p><strong>One Piece</strong> is one of the most popular anime and manga series in the world. It follows Monkey D. Luffy, a young pirate who dreams of finding the legendary treasure called <em>One Piece</em> and becoming the King of the Pirates. Alongside his loyal crew — the Straw Hat Pirates — Luffy sails across the Grand Line, confronting powerful foes and discovering new adventures.</p>
+
+      <p>What makes <em>One Piece</em> special is its emphasis on friendship, dreams, and courage. Each crew member has their own goal, but they support each other no matter what. The series teaches us to keep chasing our dreams and to stand by those we care about, even when the odds are against us.</p>
+
+      <p class="highlight">Not just pirates and battles — One Piece is about believing in yourself.</p>
+    </div>
+  </article>
+</body>
+</html>

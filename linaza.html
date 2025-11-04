@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Linaza | Portfolio</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0f172a', // slate-900 
+                        'card-bg': '#1e293b',    // slate-800
+                        'accent': '#38bdf8',     // sky-400
+                        'text-default': '#f1f5f9', // slate-100
+                        'muted': '#94a3b8',      // slate-400
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-bg text-text-default flex justify-center items-start min-h-screen p-6">
+    
+    <!-- Single Column Container - Max Width 3XL for simplicity -->
+    <div class="container flex flex-col bg-card-bg rounded-xl shadow-2xl max-w-3xl w-full overflow-hidden mt-8 mb-8">
+        
+        <!-- TOP SECTION: Profile Header (Replaces the 'LEFT' column) -->
+        <div class="profile-header p-8 flex flex-col items-center text-center text-white 
+                    bg-gradient-to-b from-blue-900 to-primary-bg rounded-t-xl">
+            
+            <!-- Profile Image -->
+            <img 
+                src="ken.jpg" 
+                alt="Profile Picture" 
+                class="w-36 h-36 rounded-full object-cover border-4 border-accent mb-4 shadow-xl shadow-accent/30"
+            >
+            
+            <h1 class="text-3xl font-bold mt-2">Ken Linaza</h1>
+            <h2 class="text-xl text-accent mb-6 font-medium">IT Student / Mathematics Enthusiast</h2>
+
+            <!-- About Section (Shortened) -->
+            <div class="about bg-white/10 rounded-xl p-4 mt-4 mb-6 text-base leading-relaxed max-w-xl">
+                <h3 class="text-accent text-lg font-semibold mb-2">About Me</h3>
+                <p>
+                    Hi! I'm Ken. I am a dedicated 2nd-year Information Technology student with a passion for logic. I love applying the logical precision of mathematics to build foundational digital structures, focusing on clean, functional web pages and strengthening my core computational thinking.
+                </p>
+            </div>
+
+            <!-- Contact Section (REMOVED) -->
+        </div>
+
+        <!-- BOTTOM SECTION: Content Details (Replaces the 'RIGHT' column) -->
+        <div class="details-content p-8 bg-primary-bg space-y-8">
+            
+            <!-- My Works -->
+            <div class="section bg-card-bg p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-xl hover:shadow-accent/20">
+                <h3 class="text-accent text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-globe"></i> My Works
+                </h3>
+                <a href="linazablog.html" class="text-accent font-medium hover:underline transition duration-300">VIEW MY BLOG</a>
+            </div>
+
+            <!-- Education (Simplified) -->
+            <div class="section bg-card-bg p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-xl hover:shadow-accent/20">
+                <h3 class="text-accent text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> Education
+                </h3>
+                <ul class="list-none space-y-2">
+                    <li class="text-muted text-base leading-relaxed">
+                        <strong class="text-text-default">Davao Vision Colleges</strong> — BS in Information Technology (2025–2026)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skills (Simplified) -->
+            <div class="section bg-card-bg p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-xl hover:shadow-accent/20">
+                <h3 class="text-accent text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-calculator"></i> Skills
+                </h3>
+                <ul class="list-none space-y-2 text-base">
+                    <li class="text-muted">Good at Mathematics (Computational Logic, Problem Solving)</li>
+                    <li class="text-muted">Basic HTML(Structure and Semantics)</li>
+                </ul>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center pt-4">
+                                   
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

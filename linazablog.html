@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Linaza's Logics and Learning</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155; 
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0f172a', // slate-900 
+                        'card-bg': '#1e293b',    // slate-800
+                        'accent': '#38bdf8',     // sky-400
+                        'text-default': '#f1f5f9', // slate-100
+                        'muted': '#94a3b8',      // slate-400
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-bg text-text-default flex justify-center p-6">
+
+    <!-- Blog Container -->
+    <div class="max-w-4xl w-full">
+        
+        <!-- Header -->
+        <header class="text-center py-10 mb-8 rounded-xl bg-card-bg shadow-xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-accent mb-2">
+                Logics and Learning
+            </h1>
+            <p class="text-lg text-muted">
+                My journey through math and IT, one determined step at a time.
+            </p>
+        </header>
+
+        <!-- Blog Posts Grid -->
+        <div class="space-y-8">
+
+            <!-- Post 1: Student Determination Focus -->
+            <article class="bg-card-bg p-6 md:p-8 rounded-xl shadow-lg border border-primary-bg transition duration-300 hover:border-accent/30">
+                <h2 class="text-2xl font-bold text-text-default mb-2">
+                    <i class="fa-solid fa-laptop-code text-accent mr-2"></i> Just an Ordinary Student Doing My Best
+                </h2>
+                <!-- Removed: Published: November 4, 2025 | Category: Student Life -->
+                <div class="text-base leading-relaxed text-muted space-y-4">
+                    <p>
+                        I'm not a genius, and I don't pretend to be. I'm just an ordinary 2nd-year IT student at Davao Vision Colleges, grinding through the curriculum like everyone else. There are days when the code breaks and the concepts feel too abstract. But that's where my love for mathematics comes in.
+                    </p>
+                    <p>
+                        Math teaches you persistence. It teaches you that every problem has a solution, even if you have to try five different approaches to find it. I'm committed to applying that patient, logical approach to every programming challenge, every network assignment, and every late-night study session. My goal isn't just to pass—it's to master the logic that powers the digital world.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Post 2: Math Topic Focus -->
+            <article class="bg-card-bg p-6 md:p-8 rounded-xl shadow-lg border border-primary-bg transition duration-300 hover:border-accent/30">
+                <h2 class="text-2xl font-bold text-text-default mb-2">
+                    <i class="fa-solid fa-square-root-variable text-accent mr-2"></i> The Beauty of Binary: Math's Simplest Gift to IT
+                </h2>
+                <!-- Removed: Published: October 28, 2025 | Category: Mathematics -->
+                <div class="text-base leading-relaxed text-muted space-y-4">
+                    <p>
+                        It might sound basic, but the binary system ($0$s and $1$s) is the most elegant idea in modern computing. It's a perfect example of how complex systems can be built from the simplest mathematical foundation.
+                    </p>
+                    <p>
+                        We, as IT students, deal with complicated languages, databases, and servers. But at its heart, it all returns to Boolean algebra—the mathematical logic of TRUE and FALSE. Understanding *why* a computer works on two digits helps me debug better, think about data storage, and truly appreciate the logic gates we learn in hardware class. It's the moment when math stops being abstract and becomes tangible, functional code.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Footer / Back Link -->
+        <div class="text-center py-10">
+            <a href="linaza.html" class="inline-block bg-accent text-primary-bg font-semibold py-3 px-8 rounded-full transition duration-300 hover:bg-sky-300 shadow-lg">
+                &larr; Back to Portfolio
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

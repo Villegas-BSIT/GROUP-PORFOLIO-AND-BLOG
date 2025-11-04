@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harmony Hub — A Friendly Music Blog</title>
+  <style>
+    :root{ --bg:#f6f7f9; --card:#ffffff; --muted:#6b7280; --accent:#1f2937 }
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--accent)}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#7dd3fc,#60a5fa);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.8rem}
+    p.lead{margin:6px 0 20px;color:var(--muted)}
+    nav{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+    nav a{padding:8px 12px;background:var(--card);border-radius:10px;text-decoration:none;color:var(--accent);box-shadow:0 1px 2px rgba(16,24,40,0.04)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    main{min-height:400px}
+    article.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .images{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    figure{margin:0;background:#fafafa;padding:8px;border-radius:8px}
+    figure img{display:block;width:100%;height:200px;object-fit:cover;border-radius:6px}
+    figcaption{margin-top:8px;font-size:0.95rem;color:var(--muted)}
+    aside.card{padding:16px}
+    ul.tips{padding-left:1.1rem}
+    footer{margin-top:24px;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.images{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">HH</div>
+      <div>
+        <h1>Harmony Hub</h1>
+        <p class="lead">Practical music tips, listening guides, instrument pointers, and playlists to help you enjoy and learn music.</p>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#genres">Genres</a>
+      <a href="#learn">Learn</a>
+      <a href="#gear">Gear</a>
+      <a href="#listening">Listening</a>
+      <a href="#images">Gallery</a>
+    </nav>
+
+    <div class="grid">
+      <main>
+        <article class="card" id="genres">
+          <h2>1) Explore genres with purpose</h2>
+          <p>Start with three goals: (1) what feeling do you want — energetic, relaxed, thoughtful; (2) what era or culture interests you; (3) do you want to study production, songwriting or performance? Use playlists that highlight one instrument or production technique to train your ears.</p>
+        </article>
+
+        <article class="card" id="learn" style="margin-top:16px">
+          <h2>2) Learn smarter — not harder</h2>
+          <p>Practice in short, focused bursts (20–40 minutes). Pick one small, measurable target per session: learn the first 8 bars, master a rhythm, or memorize one riff. Record yourself — listening back is where real progress happens.</p>
+        </article>
+
+        <article class="card" id="gear" style="margin-top:16px">
+          <h2>3) Gear that helps, not distracts</h2>
+          <p>Invest first in fundamentals: good headphones or monitors, a reliable tuner, and a simple audio interface if you record. Fancy gear rarely substitutes for consistent practice.</p>
+        </article>
+
+        <article class="card" id="listening" style="margin-top:16px">
+          <h2>4) Active listening is training</h2>
+          <p>When you listen, try these micro-exercises: identify the bassline, clap the rhythm, follow harmonic changes, or transcribe a short melody. Over time you'll hear structures faster and enjoy music more deeply.</p>
+        </article>
+
+        <article class="card" id="images" style="margin-top:16px">
+          <h2>5) Visual inspiration — gallery</h2>
+          <p class="lead">Images below to spark ideas — each has a short note on how it can inspire your music journey.</p>
+
+          <div class="images">
+            <figure>
+              <img src="https://i.ibb.co/G3dksRMJ/5xh-Do-TERV3yy5-MWEQh-WAYi.jpg" alt="5xh-Do-TERV3yy5-MWEQh-WAYi" border="0"></a>
+              <figcaption><strong>Acoustic focus</strong> — An acoustic guitar reminds you to work on songwriting and melody. Try composing on one instrument to keep ideas simple.</figcaption>
+            </figure>
+
+            <figure>
+              <img src="https://i.ibb.co/FQPj6tQ/Piano-Key-Names.png" alt="Piano-Key-Names" border="0"></a>
+              <figcaption><strong>Piano textures</strong> — The piano shows harmony clearly. Use it to explore chord voicings and voice-leading for richer arrangements.</figcaption>
+            </figure>
+
+            <figure>
+              <img src="https://i.ibb.co/d07BdBhm/mixing-on-headphones-pro-01-b34ke-Ppx56rud-DJK3-Ug-O8-Qj-EJq0qs-w.jpg" alt="mixing-on-headphones-pro-01-b34ke-Ppx56rud-DJK3-Ug-O8-Qj-EJq0qs-w" border="0"></a>
+              <figcaption><strong>Critical listening</strong> — Good headphones and focused listening reveal production details. Compare mixes to hear balance and stereo placement.</figcaption>
+            </figure>
+
+            <figure>
+              <img src="https://i.ibb.co/MHZNzj0/photo-1507692049790-de58290a4334.jpg" alt="photo-1507692049790-de58290a4334" border="0"></a>
+              <figcaption><strong>Live energy</strong> — Watching live performances teaches dynamics and stagecraft. Note how artists connect with audiences and use space.</figcaption>
+            </figure>
+
+            <figure>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/qLdgsgvw/NT1-Ai1-Kit.png" alt="NT1-Ai1-Kit" border="0"></a>
+              <figcaption><strong>Home studio</strong> — A small, organized studio proves you don’t need a huge space. Prioritize acoustics, mic technique, and consistent signal chain.</figcaption>
+            </figure>
+
+          </div>
+        </article>
+
+      </main>
+   <p>
+      <aside class="card">
+        <h3>Quick tips</h3>
+        <ul class="tips">
+          <li>Keep a musical journal: jot ideas, lyrics, or melody snippets.</li>
+          <li>Learn songs outside your comfort zone to expand vocabulary.</li>
+          <li>Share short clips with friends for honest feedback.</li>
+          <li>Create a weekly listening moment — 30 minutes of focused listening.</li>
+        </ul>
+
+        <h3 style="margin-top:14px">Beginner resources</h3>
+        <ol style="padding-left:1.1rem;margin-top:6px">
+          <li>Start with free courses on basic music theory.</li>
+          <li>Use slow-down tools to transcribe solos ear-by-ear.</li>
+          <li>Join a local open mic — performing accelerates learning.</li>
+        </ol>
+      </aside></p>
+    </div>
+
+    <footer>
+      <b>DONNA GRACE A. ONOC<br>
+      Made with ❤️ — Harmony Hub · Tips for better listening and making music
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romel’s Health & Fitness Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      background: #1565c0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #bbdefb;
+    }
+    section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.2rem;
+    }
+    .card-content h3 {
+      color: #1e88e5;
+      margin-bottom: 0.5rem;
+    }
+    .card-content p {
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #1e88e5;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #1565c0;
+    }
+    .about, .contact {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .about img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background: #1e88e5;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #1565c0;
+    }
+    footer {
+      text-align: center;
+      background: #1565c0;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Romel’s Health & Fitness Blog</h1>
+    <p>Empowering you to live a stronger, healthier life every day 💪</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <div class="posts">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Workout">
+        <div class="card-content">
+          <h3>Top 5 Morning Exercises</h3>
+          <p>Starting your morning with movement helps activate your metabolism, improve focus, and boost mood. Try a quick 15-minute routine: 10 squats, 10 push-ups, 30 seconds of planks, jumping jacks, and stretching. Even short workouts make a difference when done consistently.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03" alt="Nutrition">
+        <div class="card-content">
+          <h3>Healthy Eating Tips</h3>
+          <p>Fuel your body with the right balance of nutrients. Include more whole foods, vegetables, and lean proteins. Avoid processed sugar, and drink at least eight glasses of water daily. Small, steady dietary changes lead to long-term results and sustainable energy throughout the day.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Mindfulness">
+        <div class="card-content">
+          <h3>Mental Fitness Matters</h3>
+          <p>Fitness isn’t just physical — it’s mental, too. Take time for mindfulness through meditation, journaling, or simply going for a peaceful walk. Reducing stress levels improves sleep quality, strengthens your immune system, and enhances focus in your daily life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="hidden about">
+    <img src="C:\Users\Nicole\Downloads\kuya.png" alt="kuya">
+    <h2>Romel D. Peña</h2>
+    <p>Hi, I’m Romel!, I am passionate about health and fitness and love helping others feel their best. On my blog, I share simple workout tips, healthy recipes, and motivational posts to inspire you to live a stronger, happier, and more balanced life.</p>
+    <a href="#" class="btn" onclick="showSection('home')">Back to Home</a>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="hidden contact">
+    <h2>Contact Me</h2>
+    <p>Have a question, suggestion, or collaboration idea? Feel free to reach out using the form below:</p>
+    <form onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <a href="#" class="btn" onclick="showSection('home')">Back to Home</a>
+  </section>
+
+  <footer>
+    © 2025 Romel’s Health & Fitness Blog | All Rights Reserved
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
